@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useEffect  } from 'react';
 
 import "../styles/Home.css";
 import { useStateValue } from "../components/StateProvider";
 import SearchIcon from "@material-ui/icons/Search";
 
 function Home({ spotify }) {
+
     const [{typeArtist,typeSong}, dispatch] = useStateValue();
+
+    useEffect(() => {
+
+        spotify.searchArtists(typeArtist,{ limit : 28}).then((response) =>
+        dispatch({
+        type: "SEARCH_ARTIST",
+        artist:response,
+        })
+        );
+
+        spotify.searchTracks(typeSong,{ limit : 28}).then((response) =>
+        dispatch({
+        type: "SEARCH_SONGS",
+        songs:response,
+        })
+        );
+    }, [typeArtist, typeSong, dispatch]);
+
     return (
         <div className="home">
             

@@ -16,8 +16,8 @@ export const initialState = {
   typeSong: "",};
 
 const reducer = (state, action) => {
-   //console.log(action); //helpful for develop, uncomment
-  //console.log(state);   //and see console in browser
+   console.log(action); //helpful for develop, uncomment
+    console.log(state);   //and see console in browser
   switch (action.type) {
     
     case "SET_ITEM":
