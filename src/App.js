@@ -25,8 +25,20 @@ function App() {
       dispatch({
         type: "SET_TOKEN",
         token: _token,
-        
       });
+
+      spotify.getNewReleases({limit : 28}).then((response) =>{
+        dispatch({
+          type: "SET_NEW_RELEASES",
+          new_releases: response,
+        });
+      });
+
+      dispatch({
+        type: "SET_SPOTIFY",
+        spotify: spotify,
+      });
+
     }
     }, [token,  dispatch]);
 
