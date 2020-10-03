@@ -1,0 +1,38 @@
+.AlbumRow {
+    padding: 5px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    color: white;
+  }
+  
+  .AlbumRow:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.8;
+  }
+  
+  .AlbumRow__info {
+    width: 120px;
+    margin:0 10px ; 
+  }
+  
+  .AlbumRow__info > h1 {
+    margin-top: 10px;
+    font-size: 16px;
+    height: auto;
+    max-height: 40px;
+    overflow: hidden;
+  }
+  
+  .AlbumRow__info > p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: gray;
+  }
+  
+  .AlbumRow__image {
+    height: 120px;
+    width: 120px;
+  }
+  

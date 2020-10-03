@@ -1,0 +1,79 @@
+.info_body{
+  display: flex;
+  flex-direction: row ;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.info_body::-webkit-scrollbar {
+  display: none;
+}
+.info_left{
+  width: 30vw;
+  flex-direction: column ;
+}
+
+.artist_image_container{
+  display: flex;
+  align-content:  center;
+  flex-direction: column ;
+  margin-bottom: 20%;
+  margin-top: 10%;
+}
+.artist_image{
+  height: 200px;
+  width:  200px;
+  margin:10px auto ;
+  border-radius: 50%;
+}
+
+.artist_image_container > h2 {
+  font-size: 24px;
+  margin: auto 10%;
+  align-self: center;
+}
+.artist_related_artist_container{
+  margin-left: 10%;
+  align-content:  center;
+  margin-bottom: 20%;
+}
+
+.artist_related_artist_container> hr {
+  height: 0px;
+}
+
+.artist_related_artist_container > h4 {
+  margin: auto auto;
+}
+.artist_related_artist{
+  height: 70px;
+  width: 70px;
+  margin:0 10px ;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.info_right{
+  margin-left: 10%;
+  width: 70wv;
+  flex-direction: column ;
+}
+
+.artist_albums{
+  display: flex;
+  width: 70wv;
+  flex-direction: arrow ;
+  flex-wrap:  wrap;
+}
+
+.artist_top_songs{
+  overflow-y: overlay;
+  height: 40%;
+}
+
+.artist_top_songs::-webkit-scrollbar {
+  display: none;
+}
