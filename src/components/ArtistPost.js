@@ -8,6 +8,8 @@ function ArtistPost({ track }) {
     const [{item}, dispatch] = useStateValue();
     
     return (
+        //se captura el evento de dar click sobre un artista y se guarda el objeto json de este elemento
+        //para utilizarlo en la pagina de informacion del artista
         <Link className="link"  to="/info"
         onClick={()=>dispatch(
             {type: "SET_ITEM",
