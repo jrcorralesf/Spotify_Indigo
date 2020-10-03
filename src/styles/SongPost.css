@@ -1,0 +1,47 @@
+.songPost {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white !important;
+    text-decoration: none;
+}
+
+  .songPost:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.8;
+  }
+  
+  .songPost__info {
+    width: 150px;
+    margin:0 10px ;
+    margin-bottom: 40px;
+    text-decoration: none;
+    align-items: right;
+    align-self:  flex-start + center ;
+  }
+  
+  .songPost__info > h1 {
+    font-size: 14px;
+    color: white !important;
+    text-decoration: none;
+  }
+  
+  .songPost__info > p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: gray;
+  }
+  
+  .songPost__image {
+    height: 150px;
+    width: 150px;
+    margin:0 10px ;
+  }
+
+  .songPost__image:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.8;
+  }
+  

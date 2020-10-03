@@ -1,6 +1,7 @@
 import React from 'react';
 
 import "../styles/Releases.css";
+import SongPost from "../components/SongPost";
 import { useStateValue } from "../components/StateProvider";
 
 function Releases() {
@@ -13,7 +14,7 @@ function Releases() {
                 <div className="sliderContainer"  >
                     <div className="body__songs">
                         {new_releases?.albums.items.map((item) => (
-                        console.log(item)
+                        <SongPost  track={item} />
                         ))}
                     </div>
                     
