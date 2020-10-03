@@ -1,6 +1,8 @@
 import React, { useEffect  } from 'react';
+import {HashRouter as Router, Link} from "react-router-dom";
 
 import "../styles/Home.css";
+import Routes from "../Routes";
 import { useStateValue } from "../components/StateProvider";
 import SearchIcon from "@material-ui/icons/Search";
 
@@ -9,7 +11,7 @@ function Home({ spotify }) {
     const [{typeArtist,typeSong}, dispatch] = useStateValue();
 
     useEffect(() => {
-
+        
         spotify.searchArtists(typeArtist,{ limit : 28}).then((response) =>
         dispatch({
         type: "SEARCH_ARTIST",
@@ -26,6 +28,7 @@ function Home({ spotify }) {
     }, [typeArtist, typeSong, dispatch]);
 
     return (
+        <Router>
         <div className="home">
             
             <div className="upperSpace">
@@ -68,10 +71,11 @@ function Home({ spotify }) {
 
             <div className="homeBody">
                 
-                        {/* cuerpo de las diferentes paginas */}
+                        {Routes}
                 
             </div>
         </div>
+        </Router>
     );
 }
 
