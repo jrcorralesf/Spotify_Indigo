@@ -1,9 +1,22 @@
 import React from 'react';
 
-function SearchSong(props) {
+import "../styles/SearchSong.css";
+import TracksPost from "../components/TracksPost";
+import { useStateValue } from "../components/StateProvider";
+
+function SearchSong() {
+    const [{ songs }, dispatch] = useStateValue();
+    
     return (
-        <div>
-            <h1>Soy el cuerpo donde apareceran las canciones buscadas</h1>
+        <div className="releaseBody" >
+                <div className="titleRelease"> <h2>Tracks Found</h2></div>
+                <div className="sliderContainer"  >
+                    <div className="body__songs">
+                        {songs?.tracks.items.map((item) => (
+                        <TracksPost  track={item} />
+                        ))}
+                    </div>
+                </div>
         </div>
     );
 }

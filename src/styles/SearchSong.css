@@ -1,0 +1,37 @@
+
+.releaseBody{
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    overflow-y: overlay;
+    display: flex;
+    flex-direction: column;
+    align-self:  flex-start + center ;
+    
+}
+
+.releaseBody::-webkit-scrollbar {
+    display: none;
+}
+
+.titleRelease  {
+    margin: 10px auto;
+    margin-bottom: 30px;
+    text-align: center;
+    align-self:  flex-start + center ;
+}
+
+.sliderContainer{
+    
+}
+
+
+.body__songs {
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center+space-around;
+    align-items: stretch;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
