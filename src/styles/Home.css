@@ -1,0 +1,94 @@
+.home {
+    color: white;
+    background: #040404;
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100wv;
+}
+
+.upperSpace{
+    display: flex;
+    object-fit: contain;
+    background: #131313;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto ;
+    
+}
+
+.searchBarReleases{
+    display: flex;
+    background-color: #444343;
+    opacity: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    height: 30px;
+    color: gray;
+    align-items: center;
+    margin: 0 90px;
+    min-width: 70px;
+    width: 25vw;
+    margin-right: auto ;
+}
+
+.searchBarReleases:hover{
+    animation: none;
+}
+
+.searchBarReleases > input {
+    border: none;
+    background-color: #444343;
+    width: 100%;
+    color: gray;
+    -webkit-animation: none;
+    -webkit-appearance: none;
+    -moz-box-shadow: none;
+}:focus {
+    outline: none;
+}:any-link{
+    text-decoration: none;
+}
+
+.logoSearch{
+    text-decoration: none;
+    color: gray;
+}
+
+.logoSpotify{
+    display: flex;
+    flex:0.2;
+    align-items: center;
+    min-width: 70px;
+    margin-right: auto;
+    object-fit: contain;
+    height: 40px;
+    padding: 20px;
+}
+
+.logoSpotify:hover{
+    cursor: pointer;
+}
+
+.homeBody{
+    align-items: center;
+    width: 98%;
+    margin-left: 5%;
+    margin-right: 10%;
+    overflow-y: overlay;
+    display: flex;
+    flex-direction: column;
+    align-self:  flex-start + center ;
+}
+
+.homeBody::-webkit-scrollbar {
+    display: none;
+}
